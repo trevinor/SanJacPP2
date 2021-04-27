@@ -29,3 +29,53 @@ int main()
 	
 	return 0;
 }
+//struct Menu;
+    //char printMenu(string inputText) {
+    //char ch;
+    //void showdata();
+    //display menu
+
+    //cout << "\n\nMenu: \n" << "C - Open Client List" << "\nR - Open Sales Representative List" << "\nP - Open Product List" << "\nQ - Quit" << endl;
+    //cout << "\n\nChoose and option: ";
+
+    //cin >> ch;
+
+    //switch(ch) {
+    //case 'c':
+    //case 'C':
+        //cout << "Client list will open here" << endl;
+        //break;
+    //case 'r':
+    //case 'R':
+        //cout << showdata.Print() << endl;
+        //break;
+    //case 'p':
+    //case 'P':
+        //cout << "Product list will open here" << endl;
+        //break;
+    //case 's':
+    //case 'S':
+        //cout << "Sales list will open here" << endl;
+        //break;
+    //case 'q':
+    //case 'Q':
+        //exit (EXIT_SUCCESS);
+
+        //}
+        //return ch;
+//}
+
+
+//int main() {
+    //string inputText, searchWord;
+    //char option;
+
+    //cout << "Welcome to El Habanero Database" << endl;
+
+    //do {
+        //option = printMenu(inputText);
+            //cout << endl;
+   // }
+   // while (option!= 'Q'||'q');
+   // return 0;
+}
