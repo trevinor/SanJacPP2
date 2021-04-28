@@ -293,4 +293,29 @@ Choosing 3 will:
 Choosing 4 will:
 	Sales list will show the product and how many have been sold for the year.
 	I am unsure of how to update every fiscal year.
+
+
+
+
+	-----------------------------------------------------------------------------------------------------------------------------------------------04/28
+
+
+1: Client
+2: Sales Representative
+3: Product
+4: Sales
+Please select a module: 1
+========== Client Information ============
+1: Read file
+2: List all
+3: Search
+4: Add
+5: Update
+6: Save
+0: EXIT
+
+Please select a module: 2
+
+John Doe 111 Street St.
+
 	
