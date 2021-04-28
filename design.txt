@@ -1,0 +1,296 @@
+Brief explanation of the project ...
+Company Name: El Habanero
+Description: We are a food truck that sells tacos on the side of any street.
+Product(s): green taco, red taco, orange taco
+Pricing: - green taco is $2
+	 - red taco is $4
+         - orange taco is $6
+... that is all.
+
+text files needed:
+- a text file containing clients information
+- a text file containing sales representatives information
+- a text file containing the sales
+
+clientinformation.txt example:
+
+"1 - name,address,city,state,phone_number,(1)green taco,empty,empty,TotalDollarAmountofPreviousPurchase
+ 2 - name,address,city,state,phone_number,(12)green taco,(3)red taco,(2)orange taco,TotalDollarAmountofPreviousPurchase 
+ 3 - name,address,city,state,phone_number,empty,empty,empty,TotalDollarAmountofPreviousPurchase
+ 4 - name,address,city,state,phone_number,empty,empty,1(orange taco),TotalDollarAmountofPreviousPurchase"
+
+
+salesrepresentatives.txt example:
+
+"1 - name,address,city,state,phone_number,TotalDollarAmountSold
+ 2 - name,address,city,state,phone_number,TotalDollarAmountSold
+ 3 - name,address,city,state,phone_number,TotalDollarAmountSold
+ 4 - name,address,city,state,phone_number,TotalDollarAmountSold"
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+.h and .cpp files will need to be created that contain the code to make the work.
+
+The main program:
+	- Display "Welcome to the El Habanero Client Database."
+	- Display a MAIN MENU:
+		"0 - Exit
+		 1 - Open Client List
+		 2 - Open Sales Representative List
+		 3 - Open Product List
+		 4 - Open Sales List"
+
+
+
+Choosing 0 in MAIN MENU will:
+	- Display "Exiting the program..."
+	- then exit the program.
+
+
+
+Choosing 1 in MAIN MENU will:
+	- Display client information list as a Client List MENU:
+		"0 - Back
+		 1 - Add a client to list
+		 2 - View: John Doe,111 Street St.,Houston,TX,111-111-1111,(1)green taco,NA,NA,TotalDollarAmountofPreviousPurchase
+ 		 3 - View: name,address,NA,NA,phone_number,(12)green taco,(3)red taco,(2)orange taco,TotalDollarAmountofPreviousPurchase 
+ 		 4 - View: name,NA,city,state,phone_number,NA,NA,NA,TotalDollarAmountofPreviousPurchase
+		 5 - View: name,address,city,state,phone_number,NA,NA,(1)orange taco,TotalDollarAmountofPreviousPurchase" 
+	- Display "Enter # and press enter to modify: "
+			- Choosing 0 in Client List MENU will:
+				- Go back to previous menu.
+		
+			- Choosing 1 in Client List MENU will:
+				- Display "Add New Client Information ------------- "
+				- Display "Enter new client name: " > allow user to input name or "NA" > User presses Enter
+				- Display "Enter new client address: " > allow user to input address or "NA" > User presses Enter
+				- Display "Enter new client city: " > alllow user to input city or "NA" > User presses Enter
+				- Display "Enter new client state: " > allow user to input state or "NA" > User presses Enter
+				- Display "Enter new client phone number: " > allow user to input phone number or "NA" > User presses Enter
+				- Display "Enter amount of green tacos ordered: " > allow user to input amount or "NA" > User presses Enter
+				- Display "Enter amount of red tacos ordered: " > allow user to input amount or "NA" > User presses Enter
+				- Display "Enter amount of orange tacos " > allow user to input amount or "NA" > User presses Enter
+				- Display "New Client Information ------------- "
+					"Name - [name entered]
+					 Address - [address entered]
+					 City - [city entered]
+					 State - [state entered]
+					 Phone number - [phone number entered]
+					 Most Recent Order: ([# entered])green taco, ([# entered])red taco, ([# entered]) orange taco
+					 Total Price of Previous Order: $______"
+				- Display MENU:
+					"0 - Exit
+					 1 - Save
+					 2 - Restart"
+				- Display "Enter # and press enter: "
+					- Choosing 0 will:
+						- exit the menu.
+					- Choosing 1 will:
+						- Save the information inputted and add new client to client list. While continuing client count. 
+					- Choosing 2 will:
+						- restart the process of adding a Client
+			
+			- Choosing 2 in Client List MENU will:
+				- Display "John Doe's Information -------------
+				   	 Name - John Doe
+			  	   	 Address - 111 Street St.
+				   	 City - Houston
+				   	 State - TX
+				   	 Phone Number - 111-111-1111
+				   	 Most Recent Order: (1)green taco, (0)red taco, (0)orange taco
+				   	 Total Price of Previous Order: $2"
+				- Display MENU:
+					"0 - Back to client list menu
+					 1 - Edit name
+					 2 - Edit address
+			        	 3 - Edit city
+				 	 4 - Edit state
+				 	 5 - Edit phone number
+					 6 - Edit most recent order
+				- Display "Enter # and press enter: "
+					Choosing 0 will:
+						- send user back to the client list menu
+					Choosing 1 will:
+						- Display "Enter new name: "
+						- Allow user to input new name.
+					Choosing 2 will:
+						- Display "Enter new address: "
+						- Allow user to input new address.
+					Choosing 3 will:
+						- Display "Enter new city: "
+						- Allow user to enter new city.
+					Choosing 4 will:
+						- Display "Enter new state: "
+						- Allow user to enter new state.
+					Choosing 5 will:
+						- Display "Enter new phone number: "
+						- Allow user to enter new phone number.
+					Choosing 6 will:
+						- Display "Most Recent Order Information -------------
+							   (1)green taco
+							   (0)red taco
+							   (0)orange taco
+						- Display MENU:
+							"0 - Back
+							 1 - Edit amount of green tacos
+							 2 - Edit amount of red tacos
+							 3 - Edit amount of orange tacos"
+						- Display "Enter # and press enter: "
+							Choosing 0 will:
+								- send the user back to current client's information
+							Choosing A, or a, will:
+								- Display "Enter new amount of green tacos being ordered: "
+								- Allow user to enter new amount
+								- User presses Enter and returns to updated current client's info
+							Choosing B, or b, will:
+								- Display "Enter new amount of red tacos being ordered: "
+								- Allow user to enter new amount
+								- User presses Enter and returns to updated current client's info
+							Choosing C, or c, will:
+								- Display "Enter new amount of orange tacos being ordered: "
+								- Allow user to enter new amount
+								- User presses Enter and returns to updated current client's info
+				
+			- Choosing 3, 4 or 5, in the Client List MENU will:
+				- be able to do the same thing for all the other clients as example shown above
+
+
+
+Choosing 2 will:
+	- Display Sales Representatives List as a MENU:
+		"0 - Back to main menu
+		 1 - Add new Sales Rep
+		 2 - View: Crystal Smith,222 Road Rd.,Houston,TX,222-222-2222,0,0,0,0,0,0,0,0,0,0,100,20,TotalDollarAmountSold
+ 		 3 - View: name,address,city,state,phone_number,TotalDollarAmountSold
+ 		 4 - View: name,address,city,state,phone_number,TotalDollarAmountSold
+ 		 5 - View: name,address,city,state,phone_number,TotalDollarAmountSold"
+	- Display "Enter # and press enter: "
+		- Choosing 0 will:
+			- send the user back to the main menu
+		- Choosing 1 will:
+			- Display "Add New Sales Representative Information ------------- "
+			- Display "Enter new sales rep name: " > allow user to input name or "NA" > User presses Enter
+			- Display "Enter new sales rep address: " > allow user to input address or "NA" > User presses Enter
+			- Display "Enter new sales rep city: " > alllow user to input city or "NA" > User presses Enter
+			- Display "Enter new sales rep state: " > allow user to input state or "NA" > User presses Enter
+			- Display "Enter new sales rep phone number: " > allow user to input phone number or "NA" > User presses Enter
+			- Display "Enter sales rep dollar amount sold for JAN 2021: " > allow user to input # > User presses Enter
+			- Display "Enter sales rep dollar amount sold for FEB 2021: " > allow user to input # > User presses Enter
+			- Display "Enter sales rep dollar amount sold for MAR 2021: " > allow user to input # > User presses Enter
+			- Display "Enter sales rep dollar amount sold for APR 2021: " > allow user to input # > User presses Enter
+			- Display "Enter sales rep dollar amount sold for MAY 2021: " > allow user to input # > User presses Enter
+			- Display "Enter sales rep dollar amount sold for JUN 2021: " > allow user to input # > User presses Enter
+			- Display "Enter sales rep dollar amount sold for JUL 2021: " > allow user to input # > User presses Enter
+			- Display "Enter sales rep dollar amount sold for AUG 2021: " > allow user to input # > User presses Enter
+			- Display "Enter sales rep dollar amount sold for SEP 2021: " > allow user to input # > User presses Enter
+			- Display "Enter sales rep dollar amount sold for OCT 2021: " > allow user to input # > User presses Enter
+			- Display "Enter sales rep dollar amount sold for NOV 2021: " > allow user to input # > User presses Enter
+			- Display "Enter sales rep dollar amount sold for DEC 2021: " > allow user to input # > User presses Enter
+.			// I am not sure how we could add the year. So, if you have any thoughts on that let me know please.
+			- Display "New Sales Rep Information -------------
+					 Name - [name entered]
+					 Address - [address entered]
+					 City - [city entered]
+					 State - [state entered]
+					 Phone number - [phone number entered]
+					 Total Amount sold for each month so far:
+					 JAN 2021 - $[inputted amount]
+					 FEB 2021 - $[inputted amount]
+					 MAR 2021 - $[inputted amount]
+					 APR 2021 - $[inputted amount]
+					 MAY 2021 - $[inputted amount]
+					 JUN 2021 - $[inputted amount]
+					 JUL 2021 - $[inputted amount]
+					 AUG 2021 - $[inputted amount]
+					 SEP 2021 - $[inputted amount]
+					 OCT 2021 - $[inputted amount]
+					 NOV 2021 - $[inputtted amount]
+					 DEC 2021 - $20
+					 Total Amount sold in 2021: $_______"
+				- Display MENU:
+					"0 - Exit
+					 1 - Save
+					 2 - Restart"
+				- Display "Enter # and press enter: "
+					- Choosing 0 will:
+						- exit the menu.
+					- Choosing 1 will:
+						- add new sales rep to list while continuing sales rep count and return to Sales Representatives List.
+					- Choosing 2 will:
+						- restart the process of adding a Sales Rep
+			- Choosing 2 will:
+				- Display "Crystal Smith's Information -------------
+				   	 Name - Crystal Smith
+			  	   	 Address - 222 Road Rd.
+				   	 City - Houston
+				   	 State - TX
+				   	 Phone Number - 222-222-2222
+					 Total Amount sold for each month so far:
+					 JAN 2021 - $0
+					 FEB 2021 - $0
+					 MAR 2021 - $0
+					 APR 2021 - $0
+					 MAY 2021 - $0
+					 JUN 2021 - $0
+					 JULY 2021 - $0
+					 AUG 2021 - $0
+					 SEP 2021 - $0
+					 OCT 2021 - $0
+					 NOV 2021 - $100
+					 DEC 2021 - $20
+					 Total Amount sold in 2021: $120"
+				   	 
+				- Display MENU:
+					"0 - Back to sales rep menu
+					 1 - Edit name
+					 2 - Edit address
+			        	 3 - Edit city
+				 	 4 - Edit state
+				 	 5 - Edit phone number
+					 6 - Edit JAN 2021 amount
+					 7 - Edit FEB 2021 amount
+					 8 - Edit MAR 2021 amount
+					 9 - Edit APR 2021 amount
+					 10 - Edit MAY 2021 amount
+					 11 - Edit JUN 2021 amount
+					 12 - Edit JUL 2021 amount
+					 13 - Edit AUG 2021 amount
+					 14 - Edit SEP 2021 amount
+					 15 - Edit OCT 2021 amount
+					 16 - Edit NOV 2021 amount
+					 17 - Edit DEC 2021 amount"
+				- Display "Enter # and press enter: "
+					Choosing 0 will:
+						- send user back to the sales rep list menu
+					Choosing 1 will:
+						- Display "Enter new name: "
+						- Allow user to input new name.
+					Choosing 2 will:
+						- Display "Enter new address: "
+						- Allow user to input new address.
+					Choosing 3 will:
+						- Display "Enter new city: "
+						- Allow user to enter new city.
+					Choosing 4 will:
+						- Display "Enter new state: "
+						- Allow user to enter new state.
+					Choosing 5 will:
+						- Display "Enter new phone number: "
+						- Allow user to enter new phone number.
+					Choosing 6-17 will:
+						- Display "Enter [month]'s new amount"
+						- Allow user to input amount.
+				Any recommendation of how this will end... lmk.
+					
+				
+			
+			- Choosing 3, 4 or 5 will:
+				- be able to do the same thing for all the other sales reps as the example shown above
+
+Choosing 3 will:
+	I want to keep this as simple as possible
+
+Choosing 4 will:
+	Sales list will show the product and how many have been sold for the year.
+	I am unsure of how to update every fiscal year.
+	
