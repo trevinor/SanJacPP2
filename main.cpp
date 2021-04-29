@@ -17,7 +17,7 @@ int main()
 	cout << "1: Clients" << endl;
 	cout << "2: Sales Representatives" << endl;
 	cout << "3: Products" << endl;
-	cout << "4: Sales" << endl << endl;
+	//cout << "4: Sales" << endl << endl; <------ will be used for PP3
 	cout << "Please enter a module: ";
 	cin >> choice;
 
@@ -39,6 +39,7 @@ int main()
 			{
 				cout << endl << "Please enter a module: ";
 				cin >> choice;
+
 
 				switch (choice)
 				{
@@ -156,43 +157,48 @@ int main()
 			cout << "5: Save" << endl;
 			cout << "0: Back" << endl;
 
-			switch (choice)
+			while (choice)
+			{
+				cout << endl << "Please enter a moduile: ";
+				cin >> choice;
+
+				switch (choice)
 				{
 
-				case 1:
-				{
-					// read products.txt file function
-					break;
-				}
-				case 2:
-				{
-					// list all data from products.txt function
-					break;
-				}
-				case 3:
-				{
-					// add new product to products.txt function
-					break;
-				}
-				case 4:
-				{
-					// update products in product.txt function
-					break;
-				}
-				case 5:
-				{
-					// save all information function
-					break;
-				}
-				case 0:
-				{
-					// back to main menu function
-					break;
+					case 1:
+					{
+						// read products.txt file function
+						break;
+					}
+					case 2:
+					{
+						// list all data from products.txt function
+						break;
+					}
+					case 3:
+					{
+						// add new product to products.txt function
+						break;
+					}
+					case 4:
+					{
+						// update products in product.txt function
+						break;
+					}
+					case 5:
+					{
+						// save all information function
+						break;
+					}
+					case 0:
+					{
+						// back to main menu function
+						break;
+					}
 				}
 			}
-		}
 
-			break; // I know something is wrong with the layout of the code right here. If you see a change that would help, let me know.
+			break;
 		}
 	}
 
