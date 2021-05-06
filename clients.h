@@ -1,3 +1,23 @@
+#ifndef CLIENTS_H
+#define CLIENTS_H
+
+
+class Clients
+{
+    public:
+        Clients();
+
+    protected:
+
+    private:
+};
+
+#endif // CLIENTS_H
+
+
+
+/*
+
 #ifndef CLIENT INFO_H
 #define CLIENT INFO_H
 
@@ -22,3 +42,4 @@ class ClientInformation
 };
 
 #endif // CLIENT INFO_H
+*/
