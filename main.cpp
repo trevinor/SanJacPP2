@@ -1,7 +1,11 @@
 // PP2
 // Team Uno
 #include <iostream>
-
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <iomanip>
+#include "Clients.h"
 
 using namespace std;
 
@@ -27,12 +31,11 @@ int main()
 		{
 			// CLIENTS MENU
 			cout << endl << "MAIN MENU > Clients menu" << endl << endl;
-			cout << "1: Read File" << endl;
-			cout << "2: List All" << endl;
-			cout << "3: Search" << endl;
-			cout << "4: Add" << endl;
-			cout << "5: Update" << endl;
-			cout << "6: Save" << endl;
+			cout << "1: Display clientsinformation.txt content" << endl;
+			cout << "2: Search" << endl;
+			cout << "3: Add" << endl;
+			cout << "4: Update" << endl;
+			cout << "5: Save" << endl;
 			cout << "0: Back" << endl;
 
 			while (choice)
@@ -43,38 +46,31 @@ int main()
 
 				switch (choice)
 				{
-				
-					case 1:
+                case 1:
 					{
-						// read clientinformation.txt file function
+						Clients object;
 						break;
 					}
-					case 2:
-					{
-						// list all data from clientinformation.txt function
-						break;
-					}
-					case 3:
+                case 2:
 					{
 						// search client by name from clientinformation.txt function
 						break;
 					}
-					case 4:
+                case 3:
 					{
 						// add new client to clientinformation.txt function
 						break;
 					}
-					case 5:
-					{
+                case 4:
+                    {
 						// update client in clientinformation.txt function
 						break;
-					}
-					case 6: 
-					{
-						// save all information function
-						break;
-					}
-					case 0:
+                    }
+                case 5:
+                    {
+                            // save client information function
+                    }
+                case 0:
 					{
 						// back to main menu function
 						break;
@@ -88,12 +84,11 @@ int main()
 		{
 			// SALES REPS MENU
 			cout << endl << "MAIN MENU > Sales Representatives menu" << endl << endl;
-			cout << "1: Read File" << endl;
-			cout << "2: List All" << endl;
-			cout << "3: Search" << endl;
-			cout << "4: Add" << endl;
-			cout << "5: Update" << endl;
-			cout << "6: Save" << endl;
+			cout << "1: Display salesrep.txt content" << endl;
+			cout << "2: Search" << endl;
+			cout << "3: Add" << endl;
+			cout << "4: Update" << endl;
+			cout << "5: Save" << endl;
 			cout << "0: Back" << endl;
 
 			while (choice)
@@ -103,46 +98,40 @@ int main()
 
 				switch (choice)
 				{
-
-					case 1:
-					{
-						// read salesreps.txt file function
-					break;
-					}
-					case 2:
-					{
+                case 1:
+                    {
 						// list all data from salesrep.txt function
 						break;
-					}
-					case 3:
-					{
+                    }
+                case 2:
+                    {
 						// search sales rep by name from salesrep.txt function
 						break;
-					}
-					case 4:
-					{
+                    }
+                case 3:
+                    {
 						// add new sales rep to salesrep.txt function
 						break;
-					}
-					case 5:
-					{
+                    }
+                case 4:
+                    {
 						// update sales rep in salesrep.txt function
 						break;
-					}
-					case 6:
-					{
+                    }
+                case 5:
+                    {
 						// save all information function
 						break;
-					}
-					case 0:
-					{
+                    }
+                case 0:
+                    {
 						// back to main menu function
 						break;
 					}
 				}
 			}
-			
-			
+
+
 
 			break;
 		}
@@ -165,32 +154,32 @@ int main()
 				switch (choice)
 				{
 
-					case 1:
+                case 1:
 					{
 						// read products.txt file function
 						break;
 					}
-					case 2:
+                case 2:
 					{
 						// list all data from products.txt function
 						break;
 					}
-					case 3:
+                case 3:
 					{
 						// add new product to products.txt function
 						break;
 					}
-					case 4:
+                case 4:
 					{
 						// update products in product.txt function
 						break;
 					}
-					case 5:
+                case 5:
 					{
 						// save all information function
 						break;
 					}
-					case 0:
+                case 0:
 					{
 						// back to main menu function
 						break;
@@ -204,6 +193,6 @@ int main()
 
 
 
-	
+
 	return 0;
 }
