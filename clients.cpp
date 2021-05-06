@@ -1,3 +1,24 @@
+#ifndef CLIENTS_H
+#define CLIENTS_H
+
+
+class Clients
+{
+    public:
+        Clients();
+
+    protected:
+
+    private:
+};
+
+#endif // CLIENTS_H
+
+
+
+
+
+/*
 #include <iostream>
 #include <string>
 #include <vector>
@@ -83,3 +104,4 @@ string salesTD;
 
     return 0;
 }
+*/
